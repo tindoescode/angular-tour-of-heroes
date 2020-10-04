@@ -1,0 +1,40 @@
+ul {
+    list-style: none;
+    border: 1px solid;
+    border-image-slice: 1; 
+    border-width: 5px;
+
+    border-image-source: linear-gradient(90deg, rgba(99,93,208,1) 0%, rgba(107,107,245,1) 49%, rgba(0,212,255,1) 100%);
+
+    box-shadow: 0 5px 4px #cccccc;
+
+    margin-bottom: 10px;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid;
+    border-image-slice: 1; 
+    border-width: 1px;
+
+    // transition: background 2s ease;
+    background-color: white;
+    transition-duration: 2s;
+    border-image-source: linear-gradient(90deg, rgba(99,93,208,1) 0%, rgba(107,107,245,1) 49%, rgba(0,212,255,1) 100%);
+}
+
+.selected {
+    background: linear-gradient(90deg, rgba(99,93,208,1) 0%, rgba(107,107,245,1) 49%, rgba(0,212,255,1) 100%);    
+    color: white;
+    font-weight: bold;
+
+    .badge {
+        border: 1px solid white;
+    }
+}
+
+.badge {
+    padding: 5px;
+  
+    border: 1px solid rgba(99,93,208,1);
+}
